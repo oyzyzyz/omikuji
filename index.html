@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>おみくじ</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+<button class="click" value="おみくじ" onClick="random()">omikuji</button>
+        <script type="text/javascript">
+                function random() {
+                    var rand = Math.floor( Math.random() * 7);
+                    if (rand == 0 ) msg = "大大吉"
+                    if (rand == 1 ) msg = "大吉"
+                    if (rand == 2 ) msg = "吉"
+                    if (rand == 3 ) msg = "中吉"
+                    if (rand == 4 ) msg = "小吉"
+                    if (rand == 5 ) msg = "凶"
+                    if (rand == 6 ) msg = "大凶"
+                    alert(msg);
+                    }
+            </script>
+    </body>
+</html>
